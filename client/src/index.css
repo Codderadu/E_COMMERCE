@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+body {
+  margin: 0;
+  font-family: 'Cabin', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root{
+
+  --primary-text-color:#212121;
+  --secondary-text-color:#888;
+  --accent-color:#8800c7;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1,h2,h3,h4,h5,h6{
+  color: var(--primary-text-color);
+}
+p{
+  color: var(--secondary-text-color);
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.hover-link{
+  cursor: pointer;
+  border-radius: 4px;
+}
+.hover-link:hover{
+  background-color: rgb(148, 144, 144);
+}
+.hover-link:active{
+  background-color: rgb(148, 144, 144);
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-primary{
+  padding: 12px 16px;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  user-select: none;
+}
+.btn-primary:hover{
+  background-color: #a208e9;
+}
+.btn-primary:active{
+  background-color: #8800c7;
+}
